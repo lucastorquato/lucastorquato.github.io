@@ -1,0 +1,43 @@
+# Site settings
+title: Lucas Torquato
+description: 'Senior iOS Engineer'
+url: 'http://lucastorquato.com'
+baseurl: ''
+google_analytics: 'UA-135304538-1'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Lucas Torquato'
+  email: lucastorquato@gmail.com
+  twitter_username: lucastorquato
+  facebook_username: a
+  github_username:  lucastorquato
+  linkedin_username:  lucastorquato
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
